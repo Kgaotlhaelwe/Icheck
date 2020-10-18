@@ -1,0 +1,7 @@
+{
+  "name": "Icheck",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
