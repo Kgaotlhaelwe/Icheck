@@ -1,30 +1,29 @@
 <ion-header>
   <ion-toolbar>
     <ion-title></ion-title>
-    
-   
+
+
     <ion-badge color="secondary" slot="end">22</ion-badge>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-
-  <div class="category">
-
+  <h3>All categories</h3>
+  <div class="category" style="margin-top:35px;">
     <ion-slides pager="false" [options]="slideOpts">
       <ion-slide>
-        <span class="dot" style="position: relative;">
+        <span class="dot">
+          <i class="fas fa-cocktail" style="font-size:30px;  padding-top: 25px;" color="secondary"></i>
 
         </span>
       </ion-slide>
-
       <ion-slide>
         <span class="dot">
-
+          <i class="fas fa-salad"></i>
+          <i class="fas fa-salad" style="font-size:30px;  padding-top: 25px;" color="secondary"></i>
         </span>
       </ion-slide>
-
 
       <ion-slide>
         <span class="dot"></span>
@@ -41,101 +40,92 @@
 
   </div>
 
+  <div style="display: flex; justify-content: space-between; margin-top: 120px;">
+    <h3>Beverage</h3>
 
-  <ion-slides style="margin-top:155px;" pager="false" [options]="slideOpts">
+    <small>see more</small>
+  </div>
+
+
+  <ion-slides style="margin-top:15px;" pager="false" [options]="slideOpts">
     <ion-slide>
-
       <div class="card ml-2" style="width: 18rem;">
         <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-         
-
-
+          <h5 class="card-title">Moet</h5>
           <div *ngIf="product1; else elseBlock">
             <ion-icon name="add-circle-outline" style="font-size:30px;" (click)="show()"></ion-icon>
           </div>
-
           <ng-template #elseBlock>
-            <div class="box" >
+            <div class="box">
               <div>
                 <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
               </div>
               <div>
                 <p style="position: absolute;top:30%;">1</p>
               </div>
-             
-            
-             
               <div>
                 <ion-icon name="add" style="position: absolute; top:30%"></ion-icon>
               </div>
             </div>
           </ng-template>
-        
         </div>
       </div>
-
     </ion-slide>
-
     <ion-slide>
-
       <div class="card ml-2" style="width: 18rem;">
-      <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <ion-icon name="add-circle-outline"></ion-icon>
-        <div class="box" *ngIf="false">
-          <div>
-            <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
-          </div>
-          <div class="line">
-          </div>
-          <p style="position: absolute;top:30%;">1</p>
-          <div class="line">
-          </div>
-          <div>
-            <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+        <img src="../../assets/heiken.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Heiken</h5>
+          <ion-icon name="add-circle-outline"></ion-icon>
+          <div class="box" *ngIf="false">
+            <div>
+              <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+            </div>
+            <div class="line">
+            </div>
+            <p style="position: absolute;top:30%;">1</p>
+            <div class="line">
+            </div>
+            <div>
+              <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
     </ion-slide>
-
 
     <ion-slide>
       <div class="card ml-2" style="width: 18rem;">
-      <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <ion-icon name="add-circle-outline"  style="font-size:30px;"></ion-icon>
-        <div class="box" *ngIf="false">
-          <div>
-            <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
-          </div>
-          <div class="line">
-          </div>
-          <p style="position: absolute;top:30%;">1</p>
-          <div class="line">
-          </div>
-          <div>
-            <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+        <img src="../../assets/castlite.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Castlite</h5>
+          <ion-icon name="add-circle-outline" style="font-size:30px;"></ion-icon>
+          <div class="box" *ngIf="false">
+            <div>
+              <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+            </div>
+            <div class="line">
+            </div>
+            <p style="position: absolute;top:30%;">1</p>
+            <div class="line">
+            </div>
+            <div>
+              <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
     </ion-slide>
 
 
     <ion-slide>
-
       <div class="card ml-2" style="width: 18rem;">
         <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <ion-icon name="add-circle-outline"  style="font-size:30px;"></ion-icon>
+          <ion-icon name="add-circle-outline" style="font-size:30px;"></ion-icon>
           <div class="box" *ngIf="false">
             <div>
               <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
@@ -155,6 +145,112 @@
     </ion-slide>
   </ion-slides>
 
+
+
+  <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+    <h3>Related items</h3>
+
+    <small>see more</small>
+  </div>
+
+
+  <ion-slides style="margin-top:15px;" pager="false" [options]="slideOpts">
+    <ion-slide>
+      <div class="card ml-2" style="width: 18rem;">
+        <img src="../../assets/cool-drinks/sprite.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sprite</h5>
+          <div *ngIf="product1; else elseBlock">
+            <ion-icon name="add-circle-outline" style="font-size:30px;" (click)="show()"></ion-icon>
+          </div>
+          <ng-template #elseBlock>
+            <div class="box">
+              <div>
+                <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+              </div>
+              <div>
+                <p style="position: absolute;top:30%;">1</p>
+              </div>
+              <div>
+                <ion-icon name="add" style="position: absolute; top:30%"></ion-icon>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="card ml-2" style="width: 18rem;">
+        <img src="../../assets/cool-drinks/fanta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fanta</h5>
+          <ion-icon name="add-circle-outline"></ion-icon>
+          <div class="box" *ngIf="false">
+            <div>
+              <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+            </div>
+            <div class="line">
+            </div>
+            <p style="position: absolute;top:30%;">1</p>
+            <div class="line">
+            </div>
+            <div>
+              <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="card ml-2" style="width: 18rem;">
+        <img src="../../assets/cool-drinks/spar-letta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Spar--letta</h5>
+          <ion-icon name="add-circle-outline" style="font-size:30px;"></ion-icon>
+          <div class="box" *ngIf="false">
+            <div>
+              <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+            </div>
+            <div class="line">
+            </div>
+            <p style="position: absolute;top:30%;">1</p>
+            <div class="line">
+            </div>
+            <div>
+              <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ion-slide>
+
+
+    <ion-slide>
+      <div class="card ml-2" style="width: 18rem;">
+        <img src="../../assets/cool-drinks/fanta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <ion-icon name="add-circle-outline" style="font-size:30px;"></ion-icon>
+          <div class="box" *ngIf="false">
+            <div>
+              <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+            </div>
+            <div class="line">
+            </div>
+            <p style="position: absolute;top:30%;">1</p>
+            <div class="line">
+            </div>
+            <div>
+              <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ion-slide>
+  </ion-slides>
 
 
 </ion-content>
