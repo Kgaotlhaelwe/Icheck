@@ -1,23 +1,31 @@
+
+
+.showAllStores{
+  display: flex;
+ justify-content: space-around;
+ margin-top: 5px;
+}
+
+
+
 #container {
    
-  
+  text-align: center;
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 30%;
     
   }
 
 
-  input {
-      width:80%;
-      height: 40px;
-  }
 
 
-  .showIcons{
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  
+.avatar {
+  height: 70px;
+  width: 70px;
+ 
+  border-radius: 50%;
+  border: solid steelblue 2px;
+  display: inline-block;
+}

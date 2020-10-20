@@ -1,0 +1,48 @@
+
+
+.category{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+}
+
+.dot {
+    height: 80px;
+    width: 80px;
+  
+    border-radius: 50%;
+    border: solid steelblue 2px;
+   
+    display: inline-block;
+  }
+
+  .add_btn{
+    height: 40px;
+    width: 40px;
+  
+    border-radius: 50%;
+    background-color:  steelblue ;
+   
+    display: inline-block;
+    
+  }
+
+
+  .box{
+      display: flex;
+      justify-content:space-evenly;
+      width:98px;
+      background-color: grey;
+      text-align: center;
+      position: relative;
+      height: 35px;
+     
+
+  }
+
+  .line{
+    display: inline-block;
+    border: black 1px solid;
+  }

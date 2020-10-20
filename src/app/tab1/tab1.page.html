@@ -8,22 +8,54 @@
     
   </ion-row>  
 </ion-header>
-<ion-content > 
+<ion-content> 
 
 
   
 
+  <h3 style="padding-left: 27px;">All store</h3>
+  <div class="showAllStores">
+
+    <ion-slides pager="false" [options]="slideOpts">
+      <ion-slide>
+        <img src="../../assets/checkers.png" class="avatar">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../../assets/Pick and pay.png" class="avatar">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../../assets/shoprite.png" class="avatar">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="../../assets/game.png" class="avatar">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/makro.png" class="avatar">
+      </ion-slide>
+    </ion-slides>
 
   
 
- 
-  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearchResults()" placeholder="Search for a place"  (ionClear)="ClearAutocomplete()" value={{locatio}}></ion-searchbar>
+    
+   
+   
+  
+  </div>
+
+ <div  id="container">
+   <p>Choose location where you want to shop</p>
+  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearchResults()" placeholder="Search for a place"  (ionClear)="ClearAutocomplete()" value={{location}}></ion-searchbar>
   <ion-list [hidden]="autocompleteItems.length == 0">
     <ion-item *ngFor="let item of autocompleteItems" tappable (click)="SelectSearchResult(item)">
       {{ item.description }}
     </ion-item>
   </ion-list>
 
+  <ion-button color="secondary" (click)="AddShoppingList()">Proceed</ion-button>
+ </div>
   
  
 </ion-content>

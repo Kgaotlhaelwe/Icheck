@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import {Router} from "@angular/router"
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 declare var google;
 @Component({
   selector: 'app-tab1',
@@ -8,13 +10,11 @@ declare var google;
 })
 export class Tab1Page {
 
-  slideOptions = {
+  slideOpts = {
+    initialSlide: 1,
+    slidesPerView: 3
     
-    slidesPreview:3 ,
-
-
-  }
-  
+  };
   map: any;
   address:string;
   lat: string;
@@ -27,8 +27,11 @@ export class Tab1Page {
   constructor(
     
     private geolocation: Geolocation ,
-    public zone: NgZone,    
-    ) {
+    public zone: NgZone,
+    public router:Router  
+    ) 
+    
+    {
     this.geolocation.getCurrentPosition().then((resp) => {
       // resp.coords.latitude
       // resp.coords.longitude
@@ -112,9 +115,13 @@ export class Tab1Page {
   SelectSearchResult(item) {
   
     this.placeid = item.place_id
-    console.log(  this.placeid )
+    this.location =item.description;
   }
 
 
+
+  AddShoppingList(){
+    this.router.navigateByUrl("/add-shopping-list")
+  }
   
 }

@@ -1,0 +1,160 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    
+   
+    <ion-badge color="secondary" slot="end">22</ion-badge>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="category">
+
+    <ion-slides pager="false" [options]="slideOpts">
+      <ion-slide>
+        <span class="dot" style="position: relative;">
+
+        </span>
+      </ion-slide>
+
+      <ion-slide>
+        <span class="dot">
+
+        </span>
+      </ion-slide>
+
+
+      <ion-slide>
+        <span class="dot"></span>
+      </ion-slide>
+
+      <ion-slide>
+        <span class="dot"></span>
+      </ion-slide>
+      <ion-slide>
+        <span class="dot"></span>
+      </ion-slide>
+    </ion-slides>
+
+
+  </div>
+
+
+  <ion-slides style="margin-top:155px;" pager="false" [options]="slideOpts">
+    <ion-slide>
+
+      <div class="card ml-2" style="width: 18rem;">
+        <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+         
+
+
+          <div *ngIf="product1; else elseBlock">
+            <ion-icon name="add-circle-outline" style="font-size:30px;" (click)="show()"></ion-icon>
+          </div>
+
+          <ng-template #elseBlock>
+            <div class="box" >
+              <div>
+                <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+              </div>
+              <div>
+                <p style="position: absolute;top:30%;">1</p>
+              </div>
+             
+            
+             
+              <div>
+                <ion-icon name="add" style="position: absolute; top:30%"></ion-icon>
+              </div>
+            </div>
+          </ng-template>
+        
+        </div>
+      </div>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <div class="card ml-2" style="width: 18rem;">
+      <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <div class="box" *ngIf="false">
+          <div>
+            <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+          </div>
+          <div class="line">
+          </div>
+          <p style="position: absolute;top:30%;">1</p>
+          <div class="line">
+          </div>
+          <div>
+            <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </ion-slide>
+
+
+    <ion-slide>
+      <div class="card ml-2" style="width: 18rem;">
+      <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <ion-icon name="add-circle-outline"  style="font-size:30px;"></ion-icon>
+        <div class="box" *ngIf="false">
+          <div>
+            <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+          </div>
+          <div class="line">
+          </div>
+          <p style="position: absolute;top:30%;">1</p>
+          <div class="line">
+          </div>
+          <div>
+            <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </ion-slide>
+
+
+    <ion-slide>
+
+      <div class="card ml-2" style="width: 18rem;">
+        <img src="../../assets/moet.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <ion-icon name="add-circle-outline"  style="font-size:30px;"></ion-icon>
+          <div class="box" *ngIf="false">
+            <div>
+              <ion-icon name="trash-outline" style="position: absolute; top: 30%;"></ion-icon>
+            </div>
+            <div class="line">
+            </div>
+            <p style="position: absolute;top:30%;">1</p>
+            <div class="line">
+            </div>
+            <div>
+              <ion-icon name="add" style="position: absolute; top: 30%"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ion-slide>
+  </ion-slides>
+
+
+
+</ion-content>
