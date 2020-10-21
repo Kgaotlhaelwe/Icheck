@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import {Router} from "@angular/router"
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+
 declare var google;
 @Component({
   selector: 'app-tab1',
@@ -11,7 +11,7 @@ declare var google;
 export class Tab1Page {
 
   slideOpts = {
-    initialSlide: 1,
+    initialSlide: 0,
     slidesPerView: 3
     
   };
@@ -124,4 +124,8 @@ export class Tab1Page {
     this.router.navigateByUrl("/add-shopping-list")
   }
   
+
+  store(){
+    this.router.navigateByUrl("/store")
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ModalController } from '@ionic/angular';
+import {ViewShoppingListPage} from "../view-shopping-list/view-shopping-list.page"
 
 @Component({
   selector: 'app-add-shopping-list',
@@ -21,7 +22,7 @@ export class AddShoppingListPage implements OnInit {
   product1:boolean =true;
   
 
-  constructor() { }
+  constructor(private modalCtrl: ModalController) { }
 
 
 
@@ -31,7 +32,22 @@ export class AddShoppingListPage implements OnInit {
   }
 
   show(){
-this.product1=false
+  this.product1=false
+  }
+
+  viewShoppingList(){
+    this.presentModal();
+  }
+
+
+  async presentModal() {
+    const modal = await this.modalCtrl.create({
+      component:ViewShoppingListPage,
+      cssClass: 'my-custom-class',
+      swipeToClose: true,
+      presentingElement: await this.modalCtrl.getTop() // Get the top-most ion-modal
+    });
+    return await modal.present();
   }
 
 }
