@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1 style="text-align: center;" class="logo">Icheck </h1>
+  <div  class="mt-5">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="email">
+     
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password">
+    </div>
+   <br>
+   <p style="text-align:right;padding-top:-100%;"><small> Forgot password ?</small> </p>
+    <button type="submit" class="btn btn-primary" (click)="Login()">Sign in</button>
+
+    <p style="text-align:center;" (click)="signup()"><small> Don't have account ? Sign up</small> </p>
+  </div> 
+</ion-content>

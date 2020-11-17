@@ -3,9 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  {
+  },
+  {
     path: 'add-shopping-list',
     loadChildren: () => import('./add-shopping-list/add-shopping-list.module').then( m => m.AddShoppingListPageModule)
   },
@@ -20,6 +21,14 @@ const routes: Routes = [
   {
     path: 'view-shopping-list',
     loadChildren: () => import('./view-shopping-list/view-shopping-list.module').then( m => m.ViewShoppingListPageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
   }
 
 ];

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "icheck-3cc92": {
+      "hosting": {
+        "app": [
+          "icheck-3cc92"
+        ]
+      }
+    }
+  }
+}

@@ -1,9 +1,8 @@
-ion-avatar {
-    height: 60px;
-    width: 60px;
-  
-    border-radius: 50%;
-    
-   
-    display: inline-block;
-  }
+.avatar {
+  height: 70px;
+  width: 70px;
+ 
+  border-radius: 50%;
+  border: solid steelblue 2px;
+  display: inline-block;
+}
