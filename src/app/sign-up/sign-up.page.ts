@@ -19,7 +19,7 @@ export class SignUpPage implements OnInit {
 
 
   SignUp(){
-    this.auth.SignUp(this.email, this.password).then(()=>{
+     this.auth.SignUp(this.email, this.password).then(()=>{
       console.log('IM IN')
 
     })

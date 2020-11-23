@@ -3,10 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { Tab1Page } from './tab1.page';
 
 const routes: Routes = [
+  
   {
-    path: 'tabs',
+    path: '',
     component: Tab1Page,
-  }
+    redirectTo: '/tabs/(home:home)',
+    pathMatch: 'full'
+}
 ];
 
 @NgModule({

@@ -22,7 +22,7 @@ export class LoginPage implements OnInit {
   Login(){
     this.auth.Login(this.email, this.password).then(()=>{
       console.log("Im in")
-
+    this.router.navigateByUrl('/tabs/tab1')
     }).catch((error)=>{
       console.log(error.message);
       
